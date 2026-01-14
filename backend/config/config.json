@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "product_management",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306,
+    "timezone": "+08:00"
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "product_management_test",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306,
+    "timezone": "+08:00"
+  },
+  "production": {
+    "username": "root",
+    "password": "password",
+    "database": "product_management",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3306,
+    "timezone": "+08:00"
+  }
+}

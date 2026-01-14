@@ -1,0 +1,186 @@
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 03:25:39"}
+{"level":"error","message":"Database connection error:","name":"SequelizeConnectionRefusedError","original":{"code":"ECONNREFUSED","fatal":true},"parent":{"code":"ECONNREFUSED","fatal":true},"service":"product-management-api","stack":"SequelizeConnectionRefusedError\n    at ConnectionManager.connect (/var/opt/product-management/backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async ConnectionManager._connect (/var/opt/product-management/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)\n    at async /var/opt/product-management/backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32","timestamp":"2026-01-13 03:25:39"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 03:25:45"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 03:35:49"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 03:35:49"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 03:35:49"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 10:25:41"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:25:41"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:25:41"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 10:27:22"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:23"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:23"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 10:27:31"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:31"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:31"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 10:27:47"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:47"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:27:47"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 10:39:42"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:39:42"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 10:39:42"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:07:44"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:07:44"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:07:44"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:08:14"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:08:14"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:08:14"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:08:51"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:08:51"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:08:51"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:09:02"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:02"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:02"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:09:13"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:13"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:13"}
+{"level":"info","message":"开始初始化数据库...","service":"product-management-api","timestamp":"2026-01-13 11:09:25"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:25"}
+{"level":"info","message":"数据库表创建/更新完成","service":"product-management-api","timestamp":"2026-01-13 11:09:30"}
+{"errors":[{"instance":{"createdAt":"2026-01-13T03:09:30.063Z","created_at":"2026-01-13T03:09:30.049Z","description":"系统默认区域","id":1,"name":"默认区域","updatedAt":"2026-01-13T03:09:30.063Z","updated_at":"2026-01-13T03:09:30.049Z"},"message":"Region.code cannot be null","origin":"CORE","path":"code","type":"notNull Violation","validatorArgs":[],"validatorKey":"is_null","validatorName":null,"value":null}],"level":"error","message":"数据库初始化错误: notNull Violation: Region.code cannot be null","name":"SequelizeValidationError","service":"product-management-api","stack":"SequelizeValidationError: notNull Violation: Region.code cannot be null\n    at InstanceValidator._validate (/var/opt/product-management/backend/node_modules/sequelize/lib/instance-validator.js:50:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async InstanceValidator._validateAndRunHooks (/var/opt/product-management/backend/node_modules/sequelize/lib/instance-validator.js:60:7)\n    at async InstanceValidator.validate (/var/opt/product-management/backend/node_modules/sequelize/lib/instance-validator.js:54:12)\n    at async model.save (/var/opt/product-management/backend/node_modules/sequelize/lib/model.js:2426:7)\n    at async Region.create (/var/opt/product-management/backend/node_modules/sequelize/lib/model.js:1362:12)\n    at async Region.findOrCreate (/var/opt/product-management/backend/node_modules/sequelize/lib/model.js:1422:25)\n    at async createSystemAdmin (/var/opt/product-management/backend/init-db.js:34:20)","timestamp":"2026-01-13 11:09:30"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:09:55"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:55"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:09:55"}
+{"level":"info","message":"开始初始化数据库...","service":"product-management-api","timestamp":"2026-01-13 11:10:00"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:10:01"}
+{"level":"info","message":"数据库表创建/更新完成","service":"product-management-api","timestamp":"2026-01-13 11:10:09"}
+{"level":"info","message":"系统管理员账号创建完成","service":"product-management-api","timestamp":"2026-01-13 11:10:09"}
+{"level":"info","message":"管理员账号: admin","service":"product-management-api","timestamp":"2026-01-13 11:10:09"}
+{"level":"info","message":"管理员密码: admin@123","service":"product-management-api","timestamp":"2026-01-13 11:10:09"}
+{"level":"error","message":"登录错误: Cannot read properties of undefined (reading 'findOne')","service":"product-management-api","stack":"TypeError: Cannot read properties of undefined (reading 'findOne')\n    at login (/var/opt/product-management/backend/controllers/authController.js:22:32)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/var/opt/product-management/backend/node_modules/body-parser/lib/types/urlencoded.js:82:7)","timestamp":"2026-01-13 11:10:23"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:11:51"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:11:52"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:11:52"}
+{"level":"error","message":"登录错误: Cannot read properties of undefined (reading 'findOne')","service":"product-management-api","stack":"TypeError: Cannot read properties of undefined (reading 'findOne')\n    at login (/var/opt/product-management/backend/controllers/authController.js:22:32)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/var/opt/product-management/backend/node_modules/body-parser/lib/types/urlencoded.js:82:7)","timestamp":"2026-01-13 11:11:58"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:12:49"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:12:50"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:12:50"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:14:10"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:14:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:14:11"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:14:53"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:14:53"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:14:53"}
+{"level":"error","message":"登录错误: Cannot read properties of undefined (reading 'findOne')","service":"product-management-api","stack":"TypeError: Cannot read properties of undefined (reading 'findOne')\n    at login (/var/opt/product-management/backend/controllers/authController.js:22:32)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/var/opt/product-management/backend/node_modules/body-parser/lib/types/urlencoded.js:82:7)","timestamp":"2026-01-13 11:15:13"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:15:35"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:15:36"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:15:36"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:16:10"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:16:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:16:11"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:16:32"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:16:33"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:16:33"}
+{"level":"info","message":"开始初始化数据库...","service":"product-management-api","timestamp":"2026-01-13 11:16:49"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:16:49"}
+{"level":"info","message":"数据库表创建/更新完成","service":"product-management-api","timestamp":"2026-01-13 11:16:59"}
+{"level":"info","message":"系统管理员账号创建完成","service":"product-management-api","timestamp":"2026-01-13 11:16:59"}
+{"level":"info","message":"管理员账号: admin","service":"product-management-api","timestamp":"2026-01-13 11:16:59"}
+{"level":"info","message":"管理员密码: admin@123","service":"product-management-api","timestamp":"2026-01-13 11:16:59"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:21:07"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:21:07"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:21:07"}
+{"level":"error","message":"认证错误: Cannot read properties of undefined (reading 'findByPk')","service":"product-management-api","stack":"TypeError: Cannot read properties of undefined (reading 'findByPk')\n    at authMiddleware (/var/opt/product-management/backend/middlewares/auth.js:28:32)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at urlencodedParser (/var/opt/product-management/backend/node_modules/body-parser/lib/types/urlencoded.js:91:7)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at jsonParser (/var/opt/product-management/backend/node_modules/body-parser/lib/types/json.js:113:7)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9","timestamp":"2026-01-13 11:45:14"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:46:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:46:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:46:11"}
+{"level":"error","message":"获取产品列表错误: Cannot read properties of undefined (reading 'findAndCountAll')","service":"product-management-api","stack":"TypeError: Cannot read properties of undefined (reading 'findAndCountAll')\n    at getProducts (/var/opt/product-management/backend/controllers/productController.js:54:46)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/var/opt/product-management/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at Function.handle (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:175:3)\n    at router (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/var/opt/product-management/backend/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:328:13)\n    at /var/opt/product-management/backend/node_modules/express/lib/router/index.js:286:9\n    at Function.process_params (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:346:12)\n    at next (/var/opt/product-management/backend/node_modules/express/lib/router/index.js:280:10)\n    at regionAuthMiddleware (/var/opt/product-management/backend/middlewares/regionAuth.js:11:14)","timestamp":"2026-01-13 11:46:15"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:46:43"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:46:43"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:46:43"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:47:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:11"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:11"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:47:26"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:26"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:26"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:47:43"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:43"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:43"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:47:58"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:58"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:47:58"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 11:48:21"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:48:21"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 11:48:21"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 12:30:07"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 12:30:08"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 12:30:08"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 22:39:12"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 22:39:13"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 22:39:13"}
+{"level":"info","message":"开始初始化数据库...","service":"product-management-api","timestamp":"2026-01-13 22:40:31"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 22:40:31"}
+{"level":"info","message":"数据库表创建/更新完成","service":"product-management-api","timestamp":"2026-01-13 22:40:39"}
+{"level":"info","message":"系统管理员账号已存在","service":"product-management-api","timestamp":"2026-01-13 22:40:39"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 22:41:42"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 22:41:42"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 22:41:42"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-13 23:15:01"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 23:15:02"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-13 23:15:02"}
+{"ip":"::1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-13T15:15:11.996Z","userAgent":"curl/7.76.1","username":"admin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-13 23:15:12","username":"admin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-13 23:15:12","username":"admin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2,"username":"admin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"用户状态正常","service":"product-management-api","status":"active","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-13 23:15:12","tokenLength":211,"userId":2}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"level":"info","message":"登录成功，返回响应","responseLength":400,"service":"product-management-api","timestamp":"2026-01-13 23:15:12","userId":2}
+{"ip":"127.0.0.1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T06:24:04.836Z","username":"nonexist"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 14:24:04","username":"nonexist"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 14:24:04","username":"nonexist"}
+{"level":"warn","message":"用户不存在","service":"product-management-api","timestamp":"2026-01-14 14:24:04","username":"nonexist"}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 14:29:07"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:29:08"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:29:08"}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 14:29:48"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:29:48"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:29:48"}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 14:30:55"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:30:55"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 14:30:55"}
+{"ip":"::1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T06:31:26.983Z","userAgent":"curl/7.76.1","username":"admin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 14:31:26","username":"admin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 14:31:26","username":"admin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2,"username":"admin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"用户状态正常","service":"product-management-api","status":"active","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-14 14:31:27","tokenLength":211,"userId":2}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"level":"info","message":"登录成功，返回响应","responseLength":400,"service":"product-management-api","timestamp":"2026-01-14 14:31:27","userId":2}
+{"ip":"127.0.0.1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T06:44:37.378Z","username":"nonexist"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"nonexist"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"nonexist"}
+{"level":"warn","message":"用户不存在","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"nonexist"}
+{"ip":"127.0.0.1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T06:44:37.400Z","username":"admin_user"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"admin_user"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"admin_user"}
+{"level":"info","message":"找到用户","regionId":2,"role":"admin","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10,"username":"admin_user"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"用户状态正常","service":"product-management-api","status":"active","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","tokenLength":209,"userId":10}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"level":"info","message":"登录成功，返回响应","responseLength":386,"service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":10}
+{"ip":"127.0.0.1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T06:44:37.416Z","username":"sysadmin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"sysadmin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 14:44:37","username":"sysadmin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2,"username":"sysadmin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"用户状态正常","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","tokenLength":215,"userId":2}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"登录成功，返回响应","responseLength":339,"service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}

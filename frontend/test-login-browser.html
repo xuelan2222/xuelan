@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器登录测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { background: #f5f5f5; padding: 20px; border-radius: 8px; }
+        input { display: block; margin: 10px 0; padding: 10px; width: 100%; box-sizing: border-box; }
+        button { padding: 10px 20px; background: #1989fa; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .logs { background: #222; color: #0f0; padding: 10px; margin-top: 20px; height: 300px; overflow-y: scroll; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>浏览器登录测试</h1>
+    
+    <div class="container">
+        <h2>登录测试</h2>
+        <input type="text" id="username" placeholder="用户名" value="admin">
+        <input type="password" id="password" placeholder="密码" value="admin@123">
+        <input type="text" id="captcha" placeholder="验证码 (可选)">
+        <button onclick="testLogin()">测试登录</button>
+        <button onclick="clearLogs()">清除日志</button>
+    </div>
+    
+    <div class="logs" id="logs"></div>
+
+    <script>
+        function log(message) {
+            const logs = document.getElementById('logs');
+            const time = new Date().toLocaleTimeString();
+            logs.innerHTML += `[${time}] ${message}<br>`;
+            logs.scrollTop = logs.scrollHeight;
+            console.log(message);
+        }
+
+        function clearLogs() {
+            document.getElementById('logs').innerHTML = '';
+        }
+
+        function testLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const captcha = document.getElementById('captcha').value;
+            
+            log('=== 开始登录测试 ===');
+            log(`用户名: ${username}`);
+            log(`密码: ${password}`);
+            log(`验证码: ${captcha}`);
+            
+            // 测试API调用
+            fetch('http://cqxsg.cloud/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => {
+                log(`API响应状态: ${response.status}`);
+                return response.json();
+            })
+            .then(data => {
+                log('API响应数据:');
+                log(JSON.stringify(data, null, 2));
+                
+                if (data.token) {
+                    log('登录成功! 获取到token:');
+                    log(data.token.substring(0, 30) + '...');
+                    
+                    // 保存到本地存储
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('userInfo', JSON.stringify(data.user));
+                    log('已保存token和用户信息到本地存储');
+                    
+                    // 跳转到后台
+                    const shouldRedirect = confirm('登录成功! 是否跳转到后台页面?');
+                    if (shouldRedirect) {
+                        window.location.href = 'http://cqxsg.cloud/admin/dashboard';
+                    }
+                } else {
+                    log('登录失败: 未获取到token');
+                }
+            })
+            .catch(error => {
+                log('登录失败:');
+                log(error.message);
+            });
+        }
+
+        // 页面加载时自动测试
+        window.onload = function() {
+            log('页面加载完成，可以开始测试');
+            log('提示: 打开浏览器开发者工具(F12)查看更详细的日志');
+        };
+    </script>
+</body>
+</html>

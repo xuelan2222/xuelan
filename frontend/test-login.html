@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录测试</title>
+</head>
+<body>
+    <h1>登录测试</h1>
+    <button onclick="testLogin()">测试登录</button>
+    <button onclick="checkLocalStorage()">检查本地存储</button>
+    <div id="result"></div>
+
+    <script>
+        function testLogin() {
+            fetch('http://cqxsg.cloud/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: 'admin',
+                    password: 'admin@123'
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('网络错误');
+                }
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('result').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                console.log('登录成功:', data);
+                
+                // 保存token到本地存储
+                localStorage.setItem('token', data.token);
+                localStorage.setItem('userInfo', JSON.stringify(data.user));
+            })
+            .catch(error => {
+                document.getElementById('result').innerHTML = '登录失败: ' + error.message;
+                console.error('登录失败:', error);
+            });
+        }
+
+        function checkLocalStorage() {
+            const token = localStorage.getItem('token');
+            const userInfo = localStorage.getItem('userInfo');
+            
+            let result = '<h3>本地存储内容:</h3>';
+            result += '<p><strong>Token:</strong> ' + (token ? token.substring(0, 20) + '...' : '无') + '</p>';
+            result += '<p><strong>User Info:</strong></p>';
+            result += '<pre>' + (userInfo ? JSON.stringify(JSON.parse(userInfo), null, 2) : '无') + '</pre>';
+            
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
