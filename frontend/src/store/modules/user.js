@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import axios from '@/services/api'
 import { showFailToast, showSuccessToast } from 'vant'
+import router from '@/router'
 
 export const useUserStore = defineStore('user', {
   state: () => ({
@@ -47,6 +48,15 @@ export const useUserStore = defineStore('user', {
         this.isLogin = true
         
         showSuccessToast('登录成功')
+
+        // 根据角色自动跳转（管理员 → 后台首页，普通用户 → 前台首页）
+        try {
+          const targetRoute = (user.role === 'system_admin' || user.role === 'admin') ? '/admin/dashboard' : '/home'
+          await router.replace(targetRoute)
+        } catch (e) {
+          console.error('自动跳转失败:', e)
+        }
+
         return response.data
       } catch (error) {
         showFailToast(error.response?.data?.message || '登录失败')
@@ -69,6 +79,15 @@ export const useUserStore = defineStore('user', {
         this.isLogin = true
         
         showSuccessToast('注册成功')
+
+        // 根据角色自动跳转（管理员 → 后台首页，普通用户 → 前台首页）
+        try {
+          const targetRoute = (user.role === 'system_admin' || user.role === 'admin') ? '/admin/dashboard' : '/home'
+          await router.replace(targetRoute)
+        } catch (e) {
+          console.error('注册后自动跳转失败:', e)
+        }
+
         return response.data
       } catch (error) {
         showFailToast(error.response?.data?.message || '注册失败')

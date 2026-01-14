@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend (inspect)",
+      "type": "shell",
+      "command": "cd backend && PORT=3001 node --inspect=0.0.0.0:9229 app.js",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Frontend (Vite)",
+      "type": "shell",
+      "command": "cd frontend && npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Backend (Remote)",
+      "type": "pwa-node",
+      "request": "attach",
+      "port": 9229,
+      "address": "localhost",
+      "localRoot": "${workspaceFolder}/backend",
+      "remoteRoot": "/var/opt/product-management/backend",
+      "restart": true,
+      "protocol": "inspector"
+    },
+    {
+      "name": "Launch Frontend (Chrome)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend",
+      "preLaunchTask": "Start Frontend (Vite)"
+    }
+  ]
+}
