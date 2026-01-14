@@ -242,7 +242,15 @@ const validateInviteCode = async (req, res) => {
   }
 };
 
-// 生成JWT令牌
+/**
+ * 生成 JWT 令牌
+ * @param {Object} user - 用户对象（sequelize model 或 简单对象）
+ * @property {number} user.id
+ * @property {string} user.username
+ * @property {string} user.role
+ * @property {number} user.region_id
+ * @returns {string} JWT
+ */
 const generateToken = (user) => {
   const payload = {
     id: user.id,
@@ -252,7 +260,7 @@ const generateToken = (user) => {
   };
   
   return jwt.sign(payload, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXPIRES_IN
+    expiresIn: process.env.JWT_EXPIRES_IN || '24h'
   });
 };
 
@@ -281,5 +289,7 @@ const validateRegister = (data) => {
 module.exports = {
   login,
   register,
-  validateInviteCode
+  validateInviteCode,
+  // 导出以便测试使用
+  generateToken
 };

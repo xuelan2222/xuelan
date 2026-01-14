@@ -18,7 +18,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // 中间件配置
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_ORIGIN || 'http://localhost:3001',
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Region-ID']
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
