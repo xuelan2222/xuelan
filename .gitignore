@@ -1,1 +1,14 @@
-node_modules
+# Ignore node modules and env
+node_modules/
+**/node_modules/
+.env
+.env.*
+dist/
+build/
+logs/
+*.log
+.DS_Store
+coverage/
+.idea/
+.vscode/
+/tmp/
