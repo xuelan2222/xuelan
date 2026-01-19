@@ -184,3 +184,48 @@
 {"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
 {"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
 {"level":"info","message":"登录成功，返回响应","responseLength":339,"service":"product-management-api","timestamp":"2026-01-14 14:44:37","userId":2}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 15:22:17"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:22:18"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:22:18"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-14 15:24:09"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:10"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:10"}
+{"level":"info","message":"Server is running on port 3000","service":"product-management-api","timestamp":"2026-01-14 15:24:20"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:21"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:21"}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 15:24:45"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:45"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:24:45"}
+{"level":"info","message":"Server is running on port 3001","service":"product-management-api","timestamp":"2026-01-14 15:54:31"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:54:31"}
+{"level":"info","message":"Database connected successfully","service":"product-management-api","timestamp":"2026-01-14 15:54:31"}
+{"ip":"::1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T07:54:47.972Z","userAgent":"curl/7.76.1","username":"admin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 15:54:47","username":"admin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 15:54:47","username":"admin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-14 15:54:48","userId":2,"username":"admin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 15:54:48","userId":2}
+{"level":"warn","message":"密码验证失败","service":"product-management-api","timestamp":"2026-01-14 15:54:48","userId":2}
+{"ip":"::1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T07:55:05.765Z","userAgent":"curl/7.76.1","username":"admin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 15:55:05","username":"admin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 15:55:05","username":"admin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2,"username":"admin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"用户状态正常","service":"product-management-api","status":"active","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-14 15:55:05","tokenLength":211,"userId":2}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"level":"info","message":"登录成功，返回响应","responseLength":400,"service":"product-management-api","timestamp":"2026-01-14 15:55:05","userId":2}
+{"ip":"::1","level":"info","message":"收到登录请求","service":"product-management-api","timestamp":"2026-01-14T07:57:12.806Z","userAgent":"axios/1.13.2","username":"admin"}
+{"level":"info","message":"登录参数验证通过","service":"product-management-api","timestamp":"2026-01-14 15:57:12","username":"admin"}
+{"level":"info","message":"开始查找用户","service":"product-management-api","timestamp":"2026-01-14 15:57:12","username":"admin"}
+{"level":"info","message":"找到用户","regionId":1,"role":"system_admin","service":"product-management-api","timestamp":"2026-01-14 15:57:12","userId":2,"username":"admin"}
+{"level":"info","message":"开始验证密码","service":"product-management-api","timestamp":"2026-01-14 15:57:12","userId":2}
+{"level":"info","message":"密码验证成功","service":"product-management-api","timestamp":"2026-01-14 15:57:12","userId":2}
+{"level":"info","message":"用户状态正常","service":"product-management-api","status":"active","timestamp":"2026-01-14 15:57:12","userId":2}
+{"level":"info","message":"开始生成JWT令牌","service":"product-management-api","timestamp":"2026-01-14 15:57:12","userId":2}
+{"level":"info","message":"JWT令牌生成成功","service":"product-management-api","timestamp":"2026-01-14 15:57:12","tokenLength":211,"userId":2}
+{"level":"info","message":"开始记录登录日志","service":"product-management-api","timestamp":"2026-01-14 15:57:12","userId":2}
+{"level":"info","message":"登录日志记录成功","service":"product-management-api","timestamp":"2026-01-14 15:57:13","userId":2}
+{"level":"info","message":"登录成功，返回响应","responseLength":400,"service":"product-management-api","timestamp":"2026-01-14 15:57:13","userId":2}

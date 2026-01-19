@@ -5,6 +5,10 @@ import router from '@/router'
 
 export const useUserStore = defineStore('user', {
   state: () => ({
+    /**
+     * 当前用户信息
+     * @type {{id: number|string, username: string, role: string, region_id: number, region_name: string}}
+     */
     userInfo: {
       id: '',
       username: '',
@@ -15,7 +19,11 @@ export const useUserStore = defineStore('user', {
       phone: '',
       status: ''
     },
+
+    /** JWT token (纯 token 字符串，store 会在请求拦截器中加入 Bearer 前缀) */
     token: localStorage.getItem('token') || '',
+
+    /** 登录状态（基于 token 存在性） */
     isLogin: !!localStorage.getItem('token')
   }),
 

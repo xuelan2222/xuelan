@@ -90,6 +90,18 @@ router.beforeEach(async (to, from, next) => {
     if (publicRoutes.includes(to.name)) {
       // 如果是已登录用户访问公开路由（如登录页），根据角色跳转到对应页面
       if (token && to.name === 'login') {
+        // 如果 token 存在但用户信息尚未加载，先尝试获取
+        if (!userStore.userInfo || !userStore.userInfo.role) {
+          try {
+            await userStore.getUserInfo()
+          } catch (e) {
+            // 获取用户信息失败，清理并让用户停留在登录页
+            localStorage.removeItem('token')
+            userStore.logout()
+            return next()
+          }
+        }
+
         // 根据角色跳转到对应首页，避免重复跳转
         if (userStore.userInfo.role === 'system_admin' || userStore.userInfo.role === 'admin') {
           // 管理员跳转到后台首页
@@ -103,6 +115,7 @@ router.beforeEach(async (to, from, next) => {
           }
         }
       }
+
       return next() // 公开路由直接放行
     }
     
